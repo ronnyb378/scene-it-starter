@@ -19,7 +19,7 @@ body {
 	display: flex;
 	/* background-color: rgba(0, 0, 0, 0.486); */
 	width: 18rem;
-	padding: 1.5% 2%;
+	padding: 10px 5px;
 	margin-top: 4vw;
 }
 
@@ -40,11 +40,17 @@ body {
 	align-items: center;
 }
 
+#watchList-link {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+
 .watchLater {
 	position: absolute;
 	border-style: ridge;
-	right: 19px;
-	top: 13px;
+	right: 5px;
+	top: 10px;
 	font-size: 12px;
 	background-color: #B2E9FD;
 	border-color: darkcyan;
