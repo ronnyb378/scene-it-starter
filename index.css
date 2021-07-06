@@ -11,7 +11,7 @@ body {
 }
 
 .results {
-	/* margin-top: 20px; */
+	margin-top: 20px;
 }
 /* ! Everything above this line is the default */
 
@@ -40,11 +40,16 @@ body {
 	align-items: center;
 }
 
-.favorite {
+.watchLater {
 	position: absolute;
-	right: 35px;
-	top: 35px;
-
+	border-style: ridge;
+	right: 19px;
+	top: 13px;
+	font-size: 12px;
+	background-color: #B2E9FD;
+	border-color: darkcyan;
+	border: 10px;
+	border-radius: 0px 0px 0px 5px;
 }
 
 .card-date {
@@ -53,5 +58,11 @@ body {
 	border-radius: 5px;
 	padding: 0px 5px;
 	margin-top: 5px;
-	margin-right: 5px;
+	margin-right: 0px;
+	margin-left: 5px;
+}
+
+.card-title {
+	display: flex;
+	margin: 6px 0px;
 }
