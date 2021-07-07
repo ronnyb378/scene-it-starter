@@ -6,10 +6,10 @@ function saveToWatchlist(movieID) {
     }))
     let watchlistJSON = localStorage.getItem('watchlist');
     let watchlist = JSON.parse(watchlistJSON);
-    if (watchlist === null) {
-        let watchlist = []
+    if (watchlist == null) {
+        watchlist = []
     };
-    watchlist.push(movie)
+    watchlist.push(movie);
     watchlistJSON = JSON.stringify(watchlist);
     localStorage.setItem('watchlist', watchlistJSON)
 }
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // * event listener for the search bar
     bar.addEventListener('submit', (e) => {
         e.preventDefault()
-        const searchBar = document.querySelector('.search-bar')
+        // const searchBar = document.querySelector('.search-bar')
         // console.log('test')
         // * maps through data.js array and sets variable of currentMovie
         moviesContainer.innerHTML = movieData.map((currentMovie) => {
